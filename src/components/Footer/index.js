@@ -1,27 +1,23 @@
-import React from 'react';
+import React from "react";
 import {
   FaFacebook,
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
-} from 'react-icons/fa';
-import { animateScroll as scroll } from 'react-scroll';
+  FaLinkedin,
+} from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
-  // FooterLinksContainer,
-  // FooterLinksWrapper,
-  // FooterLinkItems,
-  // FooterLinkTitle,
-  // FooterLink,
-  // SocialMedia,
+  // Removed FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink
+  SocialMedia,
   SocialMediaWrap,
   SocialLogo,
-  WebsiteRights
-  // SocialIcons,
-  // SocialIconLink
-} from './FooterElements';
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink,
+} from "./FooterElements";
 
 const Footer = () => {
   const toggleHome = () => {
@@ -30,73 +26,41 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            {/* <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/sign-up'>How it works</FooterLink>
-              <FooterLink to='/'>Testimonials</FooterLink>
-              <FooterLink to='/'>Careers</FooterLink>
-              <FooterLink to='/'>Investors</FooterLink>
-              <FooterLink to='/'>Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to='/'>Contact</FooterLink>
-              <FooterLink to='/'>Support</FooterLink>
-              <FooterLink to='/'>Destinations</FooterLink>
-              <FooterLink to='/'>Sponsorships</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to='/'>Submit Video</FooterLink>
-              <FooterLink to='/'>Ambassadors</FooterLink>
-              <FooterLink to='/'>Agency</FooterLink>
-              <FooterLink to='/'>Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to='/'>Instagram</FooterLink>
-              <FooterLink to='/'>Facebook</FooterLink>
-              <FooterLink to='/'>Youtube</FooterLink>
-              <FooterLink to='/'>Twitter</FooterLink>
-            </FooterLinkItems> */}
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
+        {/* Removed FooterLinksContainer and FooterLinksWrapper */}
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/' onClick={toggleHome}>
+            <SocialLogo to="/" onClick={toggleHome}>
               Board Shorts and Birdies
             </SocialLogo>
-            <WebsiteRights>BS&B © 2024.</WebsiteRights>
-            {/* <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+            <WebsiteRights>
+              BS&B © {new Date().getFullYear()} All rights reserved.
+            </WebsiteRights>
+            <SocialIcons>
+              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-                target='_blank'
-                aria-label='Youtube'
-                rel='noopener noreferrer'
+                href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                target="_blank"
+                aria-label="Youtube"
+                rel="noopener noreferrer"
               >
                 <FaYoutube />
               </SocialIconLink>
               <SocialIconLink
-                target='_blank'
-                aria-label='Twitter'
-                href='//www.twitter.com/briandesignz'
+                target="_blank"
+                aria-label="Twitter"
+                href="//www.twitter.com/briandesignz"
               >
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
+              <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
                 <FaLinkedin />
               </SocialIconLink>
-            </SocialIcons> */}
+            </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
