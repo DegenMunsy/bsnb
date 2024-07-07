@@ -8,8 +8,8 @@ import InfoSection from '../components/InfoSection';
 
 import {
   homeObjOne,
-  homeObjTwo,
-  homeObjThree
+  homeObjTwo
+  // homeObjThree
 } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 
